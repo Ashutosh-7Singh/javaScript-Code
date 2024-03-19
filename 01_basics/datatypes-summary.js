@@ -44,3 +44,6 @@ const myFunction = function (){
 console.log(typeof myFunction);
 
 // how we can find datatype  =this can be done by using typeof
+// stack(premetive) heap(nonPremitive)
+// stact have copy 
+// heap have reference 
