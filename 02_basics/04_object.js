@@ -67,3 +67,7 @@ console.log(Object.keys(tinderUser2));//like this we can get the data in array /
 console.log(Object.entries(tinderUser2));//it gives each value in a saperate array =>[ [ 'id', '23abc' ], [ 'name', 'Moni' ], [ 'isLoggedIn', false ] ]
 
 console.log(tinderUser2.hasOwnProperty('isLoggedIn'));//ye btayega ki ye object hai ya nhi //true
+
+
+
+// 
