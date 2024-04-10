@@ -81,3 +81,25 @@ if(score>100){
     console.log(`User power:${power}`);
 } 
 console.log(`User power:${power}`);*/}
+
+// short hand notation 
+
+{
+    /*
+    //this is called implicit schope 
+    const balance = 1000
+
+if(balance >1000) console.log("false or ")
+    */
+}
+{
+    /* 
+  
+    const balance = 1000
+
+if(balance >1000) console.log("false or "),
+console.log("test 2");
+
+  // comma lga kr hm multiple lod likh skte hai lekin ye bahtue chutiya wala code hoga readalble nhi hoga
+    */
+}
