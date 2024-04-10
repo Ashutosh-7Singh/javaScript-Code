@@ -62,7 +62,7 @@ if (temp < 50) {
 console.log("ye to nahar me codtion ke to ye hmesa hi prinbt hoga baby ");
 
 */}
-{/* scoper in java script  */}
+{/* scoper in java script  */ }
 {/*
 const score =300
 
@@ -103,8 +103,9 @@ console.log("test 2");
   // comma lga kr hm multiple lod likh skte hai lekin ye bahtue chutiya wala code hoga readalble nhi hoga
     */
 }
-{/* nesting */}
+{/* nesting */ }
 
+{/* 
 const balance = 1000;
 if(balance <500){
     console.log("Less than 500");
@@ -114,4 +115,34 @@ if(balance <500){
  console.log("less than 900")
 }else{
     console.log("less than 1200");
+}
+*/}
+
+// how we use nested if eslse in real life
+
+{/* 
+// here if all the condition is true the condition is run 
+const userLoggedIn=true;
+const debitCard=true;
+
+if(userLoggedIn && debitCard && 2 == 2){
+    console.log("allow me to buy the course")
+}
+*/}
+
+{
+    /*
+    // so conditional rendering is there and we if use have both account then they can log in 
+
+    const userLoggedIn=true;
+const debitCard=true;
+const loggedInFromGoogle=false;
+const loggedFromEmail=true;
+if(userLoggedIn && debitCard && 2 == 2){
+    console.log("allow me to buy the course")
+}
+if(loggedInFromGoogle || loggedFromEmail){
+    console.log("user logged in ");
+}
+    */
 }
