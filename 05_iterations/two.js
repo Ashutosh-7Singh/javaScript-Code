@@ -12,6 +12,8 @@
 //     arr=arr+1;
 // }
 
+
+
 let score=1
 do {
     console.log(`Score is ${score}`);
