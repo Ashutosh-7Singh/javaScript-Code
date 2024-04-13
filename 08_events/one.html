@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+
+<body style="background-color: #414141; color: white;">
+    <h2>Amazing Images</h2>
+    <ul>
+        <li><img src="https://plus.unsplash.com/premium_photo-1712935547661-4fe0b2de98bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                alt="photoshop" width="200px" id="photoshop"></li>
+        <li><img src="https://images.unsplash.com/photo-1711741507608-b99fa0f16e6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
+                alt="" width="200px" id="japan"></li>
+        <li><img src="https://images.unsplash.com/photo-1712939706455-aa727970e5d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" width="200px" id="river"></li>
+        <li><img src="https://images.unsplash.com/photo-1712913909231-5719dd9b60c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+                alt="" width="200px" id="owl">owl</li>
+        <li><img src="https://images.unsplash.com/photo-1712679408447-3245b6bc7c16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" width="200px" id="prayer"></li>
+        <li>
+            <a style="color: aliceblue;" href="https://google.com" id="google">google</a>
+        </li>
+    </ul>
+</body>
+<script>
+    // this is not the best appraoch so we can't do this apporaoch
+    // document.getElementById('owl').onclick=function(){
+    //      alert("owl clicked")
+    // }
+
+    // in old days we using  attacthEvent() and jQuery-on
+
+    // we are printing evet using console log and we have to study some thing important things here so lets see what we have to study
+
+    // types,timestamp,defaultPrevented,target,toElement,srcElemen,currentTarget,
+    // some interviews related like 
+    // clientX,clientY
+    // altkey,ctrlkey,shiftkey,keyCode
+
+    // this is the latest where we are using addEventListener
+    document.getElementById('owl').addEventListener('click', function (e) {
+        // alert("owl click ed agan")
+        console.log(e)
+
+    }, false)//false is default here so can remove it acuatlluy some company give some type of question  where we cant solve that question without ture or false this come under enevt propegation 
+
+    // now we ra talking abouut event 
+
+</script>
+
+</html>
