@@ -56,7 +56,7 @@
     // }, false)//here we are using false 
     // but in some senerious we have to use event captucring also 
     // now see the example for true or capetcuring
-   {/* 
+    {/* 
  document.getElementById('images').addEventListener('click', function (e) {
         console.log("clicked inside the ul")
     }, false)
@@ -88,12 +88,25 @@
 
 
     //  here i want when i click on any image then all the got dissapear 
-    document.querySelector('#images').addEventListener('click',function(e){
+    document.querySelector('#images').addEventListener('click', function (e) {
         // console.log(e.target.parentNode);// here we are able to select the parent after taking the parentNode
-        let removeit=e.target.parentNode// yaha se hmko li mil gya jaha pe image hai parentNode le help se 
+        let removeit = e.target.parentNode// yaha se hmko li mil gya jaha pe image hai parentNode le help se 
         // removeit.remove()//this is one method now check the another
-        removeit.parentNode.removeChild(removeit)
-    },false)
+        // removeit.parentNode.removeChild(removeit)
+    }, false)
+    // with the help of parentNode we can select the li  but when we click on any li all the image is getting dissapear so we have see another modifiacation 
+
+
+    document.querySelector('#images').addEventListener
+        ('click', function (e) {
+            console.log(e.target.tagName);// so tagNem give us the tag so just give on condition 
+            if (e.target.tagName === 'IMG') {
+                console.log(e.target.id);
+                let removeit = e.target.parentNode
+                removeit.remove()
+            }
+            // removeit.parentNode.removeChild(removeit)
+        }, false)
 </script>
 
 </html>
