@@ -8,10 +8,18 @@
   <body>
     <h1>chai or code</h1>
     <button id="stop">stop</button>
-  </body> 
+  </body>
   <script>
-setTimeout(function(){
-    console.log("Ashutosh Singh");
-},2000);
+    const sayAshutosh = function () {
+      console.log("Ashutosh Singh");
+    };
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "Best Js Series";
+    };
+    const changeMe = setTimeout(changeText, 2000);
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeMe);
+      console.log("STOPPED")
+    });
   </script>
 </html>
